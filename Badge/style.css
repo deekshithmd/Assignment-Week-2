@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper.badge{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+}
+.badge.badge-content span{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.badge-content.badge-content-no-overlap{
+    background-color:rgb(220, 20, 130);
+    top: -15px;
+}
+/* p::after{
+    content: '3';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color:crimson;
+    color: white;
+    line-height: 10px;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+} */
+.badge-content-large.badge-content-large-overlap{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color:crimson;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: -15px;
+    left: 180px;
+}
+
+.badge.badge-content button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(177, 13, 226);
+    border: none;
+}
+.badge-content.badge-content-button-left{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color:rgb(64, 224, 112);
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: -12px;
+    left: 250px;
+}
+.badge-content.badge-content-button-right{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color:rgb(64, 224, 112);
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: -12px;
+    left: 330px;
+}
+.badge-content.badge-content-icon{
+    background-color:rgb(220, 20, 130);
+    top: -15px;
+    left: 140px;
+}
