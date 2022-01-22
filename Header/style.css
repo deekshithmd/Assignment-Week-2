@@ -1,0 +1,22 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(243, 240, 240);
+    color: white;
+}
+.container{
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    background-color: indigo;
+}
+.container.header-container{
+    display: flex;
+    justify-content: space-between;
+} 
+ .header-container.header-container-left{
+    display: flex;
+}
+.header-container.header-container-right{
+    display: flex;
+}
