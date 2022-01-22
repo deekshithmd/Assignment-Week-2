@@ -75,7 +75,7 @@ body{
     width: 30px;
     height: 30px;
     border-radius: 30px;
-    background-color:rgb(64, 224, 112);
+    background-color:rgb(64, 192, 224);
     color: white;
     display: inline-flex;
     justify-content: center;
@@ -84,7 +84,7 @@ body{
     left: 330px;
 }
 .badge-content.badge-content-icon{
-    background-color:rgb(220, 20, 130);
+    background-color:rgb(20, 220, 37);
     top: -15px;
     left: 140px;
 }
