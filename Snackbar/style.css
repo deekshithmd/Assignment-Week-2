@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 100vh;
+}
+.snackbar.snackbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+.snackbar.snackbar-button{
+    background-color: rgb(34, 32, 32);;
+    color: rgb(75, 75, 177);
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.snackbar.snackbar-content span{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.snackbar.snackbar-content span:hover{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(92, 92, 86);
+}
