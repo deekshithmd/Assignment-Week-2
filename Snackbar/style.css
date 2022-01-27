@@ -3,13 +3,14 @@ body{
     margin: 0;
     font-size: 20px;
 }
-.wrapper{
+.snackbar-baseline{
     display: flex;
     justify-content: center;
     align-items:flex-end;
     height: 100vh;
+    bottom: 0;
 }
-.snackbar.snackbar-content{
+.snackbar-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +20,7 @@ body{
     border-radius: 5px;
     padding: 5px 20px;
 }
-.snackbar.snackbar-button{
+.snackbar-button{
     background-color: rgb(34, 32, 32);;
     color: rgb(75, 75, 177);
     border: none;
@@ -27,18 +28,66 @@ body{
     font-weight: 600;
     cursor: pointer;
 }
-.snackbar.snackbar-content span{
+.snackbar-content span{
     color: white;
     font-size: 30px;
     font-weight: 600;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-}
-.snackbar.snackbar-content span:hover{
-    cursor: pointer;
     width: 30px;
     height: 30px;
+}
+.snackbar-content span:hover{
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(92, 92, 86);
+}
+
+/*Snackbar leading*/
+.snackbar-leading{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-end;
+}
+
+.snackbar-stacked{
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items:flex-end;
+    margin: 5px;
+}
+.snackbar-content-stacked{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;       
+}
+.snackbar-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    margin-left: 200px;
+}
+.snackbar-content-stacked span{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+.snackbar-content-stacked span:hover{
+    cursor: pointer;
     border-radius: 30px;
     background-color: rgb(92, 92, 86);
 }

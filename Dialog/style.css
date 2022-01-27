@@ -4,11 +4,16 @@ body{
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: rgb(61, 61, 61);
 }
-.wrapper.dialog-alert{
+.wrapper{
+    margin: 5px;
+}
+.dialog-alert{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -18,23 +23,109 @@ body{
     height: 150px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 20px black;
 }
-.wrapper.dialog-alert p{
+.dialog-alert p{
     margin-top: 0;
     color: rgb(82, 78, 78);
 }
-.dialog-alert.dialog-alert-buttons{
+.dialog-alert-buttons{
     display: flex;
     justify-content: flex-end;
 }
-.dialog-alert.dialog-alert-buttons button{
+.dialog-alert-buttons button{
     border: none;
     background-color: white;
     padding: 0 15px;
     font-size: 15px;
     color: blue;
 }
-.dialog-alert.dialog-alert-buttons button:hover{
+.dialog-alert-buttons button:hover{
     cursor: pointer;
+}
+
+/*Scrollable*/
+.wrapper-scroll{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    height: 400px;
+    width: 300px;
+    padding: 5px;
+}
+.dialog-alert-scroll{
+    padding: 10px;
+    background-color: rgb(197, 189, 189);
+}
+.dialog-alert-scroll h4{
+    margin: 15px auto;
+}
+.options{
+    height: 280px;
+    overflow-y: scroll; 
+    margin: 10px auto;
+    background-color: white;
+}
+.options::-webkit-scrollbar{
+    display: none;
+}
+.options li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+.options li:hover{
+    width: 100%;
+    background-color: rgb(231, 212, 248);
+}
+.dialog-alert-buttons-scroll{
+    display: flex;
+    margin-left: 120px;
+}
+.dialog-alert-buttons-scroll button{
+    border: none;
+    background-color: rgb(197, 189, 189);
+    padding: 15px;
+    font-size: 18px;
+    color: blue;
+}
+.dialog-alert-buttons-scroll button:hover{
+    background-color: rgb(231, 213, 248);
+    border-radius: 10px;
+}
+
+/*Simple dialog*/
+
+.wrapper-simple{
+    margin: 5px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dialog-alert-simple{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.dialog-alert-options img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.dialog-alert-options div{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.dialog-alert-options div:hover{
+    background-color: rgb(238, 206, 238);
+    border-radius: 10px;
+}
+.address{
+    margin-left: 20px;
 }

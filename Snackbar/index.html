@@ -8,14 +8,34 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="wrapper snackbar">
-            <div class="snackbar snackbar-content">
+    
+        <div class="snackbar-baseline">
+            <div class="snackbar-content">
                 <p>This is to test Snackbar Working</p>
-                <button class="snackbar snackbar-button">RETRY</button>
+                <button class="snackbar-button">RETRY</button>
                 <span onclick="this.parentElement.style.display='none'">&times;</span>
             </div>
         </div>
-    </div>
+    
+    
+        <div class="snackbar-leading">
+            <div class="snackbar-content">
+                <p>This is to test Snackbar Working</p>
+                <button class="snackbar-button">RETRY</button>
+                <span onclick="this.parentElement.style.display='none'">&times;</span>
+            </div>
+        </div>
+   
+    
+        <div class="snackbar-stacked">
+            <div class="snackbar-content-stacked">
+                <p>This is to test Snackbar Working, It contains Button</p>
+                <div class="snackbar-buttons">
+                    <button class="snackbar-button">ADD A NEW LABEL</button>
+                    <span onclick="this.parentElement.style.display='none'">&times;</span>
+                </div>
+            </div>
+        </div>
+    
 </body>
 </html>
