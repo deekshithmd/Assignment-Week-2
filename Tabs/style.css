@@ -3,18 +3,22 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    background-color: rgb(209, 205, 205);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .tab{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 5px;
 }
 .tab-header{
     display: inline-flex;
     align-items: center;
     color: rgb(71, 68, 68);
-    border: 2px solid black;
 }
 .tab-header-item{
     font-size: 20px;
@@ -23,12 +27,41 @@ body{
     justify-content: center;
     align-items: center;
     padding:14px 20px;
+    background-color: white;
 }
 .tab-header-item:hover{
     background-color: rgb(219, 206, 231);
+    transform: scale(1.2);
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .tab-header-item:active{
     color: white;
     background-color: rgb(136, 69, 199);
-    border-bottom: 5px solid black;
+    border-bottom: 3px solid black;
+}
+
+/*Icon-front*/
+.tab-header-item-icon-front{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:14px 20px;
+    background-color: white;
+    width: auto;
+}
+.tab-header-item-icon-front span{
+    margin-left: 10px;
+}
+.tab-header-item-icon-front:hover{
+    background-color: rgb(219, 206, 231);
+    transform: scale(1.2);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.tab-header-item-icon-front:active{
+    color: white;
+    background-color: rgb(136, 69, 199);
+    border-bottom: 3px solid black;
 }
