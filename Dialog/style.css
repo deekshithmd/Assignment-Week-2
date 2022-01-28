@@ -68,12 +68,11 @@ body{
 .options::-webkit-scrollbar{
     display: none;
 }
-.options li{
-    list-style: none;
+.options div{
     margin-left: 20px;
     padding: 10px;
 }
-.options li:hover{
+.options div:hover{
     width: 100%;
     background-color: rgb(231, 212, 248);
 }
@@ -121,6 +120,9 @@ body{
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
+}
+.dialog-alert-options div i{
+    color: rgb(141, 140, 140);
 }
 .dialog-alert-options div:hover{
     background-color: rgb(238, 206, 238);
