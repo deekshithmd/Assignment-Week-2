@@ -61,8 +61,8 @@ body{
 .snackbar-content-stacked{
     position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column;
+    align-items: center; */
     width: auto;
     background-color: rgb(34, 32, 32);
     color: white;
@@ -85,9 +85,22 @@ body{
     align-items: center;
     width: 30px;
     height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 .snackbar-content-stacked span:hover{
     cursor: pointer;
     border-radius: 30px;
     background-color: rgb(92, 92, 86);
+}
+.stack-content{
+    display: flex;
+    flex-direction: column;
+}
+.stack-content button{
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+    margin-right: 20px;
 }
